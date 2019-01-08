@@ -1,0 +1,267 @@
+/* General Stuff */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', Helvetica, sans-serif;
+  background-color: gainsboro;
+  background-image: url(http://www.dovecor.co.za/wp-content/uploads/2015/02/Music-notes2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.lobster-font1 {
+  font-family: 'Lobster', cursive, sans-serif;
+}
+
+.lobster-font2 {
+  font-family: 'Lobster Two', cursive, sans-serif;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 50%;
+}
+
+/* Navigation Bar section */
+
+#navigation-bar {
+  list-style: none;
+  width: 100%;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 175px;
+}
+
+#navigation-bar li {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline;
+  float: right;
+  padding: 15px 15px 0px 15px;
+  text-shadow: 4px 4px 4px #888;
+}
+
+#navigation-bar li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 4px 4px 4px #555;
+}
+
+/* About section */
+
+#about {
+  margin-top: 90px;
+  padding: 30px 70px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-left: 2px;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .65), rgba(255, 255, 255, .2)), url(https://usercontent2.hubstatic.com/13511691.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#about hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#about img {
+  border-style: solid;
+  border-radius: 50%;
+  border-color: aliceblue;
+  width: auto;
+}
+
+#about h2 {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 0px;
+  text-shadow: 4px 4px 4px black;
+}
+
+#about h4,
+h3 {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
+#about li {
+  font-size: 22px;
+  display: inline;
+  padding: 15px 10px 0px 10px;
+  text-shadow: 4px 4px 4px black;
+  color: white;
+}
+
+/* Portfolio Section */
+
+#portfolio,
+#contact {
+  margin-top: 180px;
+  text-align: center;
+  padding-left: 26px;
+  padding-top: 10px;
+  padding-right: 25px;
+  background-color: #faf9d1;
+  border-radius: 5px;
+  background-image: url(http://atgbcentral.com/data/out/166/5435536-music-background-images.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#portfolio h2 {
+  color: #ffa500;
+  text-shadow: 4px 4px 4px #ffc14d;
+  font-family: 'Lobster Two', cursive;
+}
+
+.img-thumbnail {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+#portfolio img {
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+#portfolio img:hover {
+  opacity: 1;
+}
+
+
+.project-fitting {
+  margin: 20px;
+}
+
+.col-caption {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Contact me section */
+
+#contact {
+  background-color: #9cc2f4;
+  background-image: url(http://atgbcentral.com/data/out/37/4214711-background-images-for-websites.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact h2 {
+  color: #1663c7;
+  text-shadow: 4px 4px 4px #10b891;
+  font-family: 'Lobster Two', cursive;
+}
+
+#contact .col p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+#social-media .btn {
+  font-size: 20px;
+  /*background-color: lightskyblue;*/
+  background-color: #010f18;
+  color: white;
+  border-style: none;
+  border: 2px solid;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: auto 6px;
+}
+
+#social-media .btn:hover {
+  background-color: white
+    /*#e7f5fe*/
+  ;
+  color: black;
+  border: 2px solid #010f18;
+  opacity: 1;
+}
+
+#contact form {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+#contact p {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #ffc14d;
+  box-sizing: border-box;
+  color: #ff8000;
+}
+
+/* Placeholder color.
+It's necessary to specify this for every browser or otherwise it'll be ignored (thank you, fuxia and hitautodestruct from Stackoverflow)*/
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #008ae6;
+  opacity: 0.35;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #008ae6;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #008ae6;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #008ae6;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #008ae6;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #008ae6;
+}
+
+footer {
+  padding-top: 35px;
+  font-family: 'Lobster', Calibri;
+  font-size: 19px;
+  color: #002966;
+  text-shadow: 4px 4px 4px #66a3ff;
+}
+
+footer p a {
+  text-decoration: none;
+  text-shadow: 4px 4px 4px #888;
+}

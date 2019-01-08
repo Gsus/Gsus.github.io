@@ -1,1 +1,163 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jesús Sánchez - Front End Developer</title>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!--Font Awesome Icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigation bar-->
+    <nav id="navigation-bar">
+      <ul>
+        <li class="lobster-font1" style="float: left; font-size: 40px; padding-bottom: 30px; margin-left: -50px;">Jesús
+          Sánchez <i class="fa fa-code"></i> Front End Developer </li>
+        <div class="lobster-font2">
+          <li><a href="#contact">Contact me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </div>
+      </ul>
+    </nav>
+    <!-- About section -->
+    <div id="about">
+      <h2><i class="fa fa-info-circle"></i> About</h2>
+      <hr>
+      <!-- Description and image -->
+      <div class="row text-center">
+        <div class="col-md-8">
+          <h3>Electronic Engineering student. <br>General Enthusiast. <br>Learning Web Development. <br><br>"Anything's
+            worth working for if you want it enough"</h3>
+          <hr>
+          <ul>
+            <li><i class="fa fa-graduation-cap"></i>Student</li>
+            <li><i class="fa fa-language"></i> Polyglot</li>
+            <li><i class="fa fa-music"></i> Musician</li>
+            <li><i class="fa fa-gamepad"></i> Gamer</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <img src="https://scontent.fccs3-1.fna.fbcdn.net/v/t1.0-9/36329960_10216906899286984_6327523103832276992_n.jpg?_nc_cat=106&_nc_ht=scontent.fccs3-1.fna&oh=a842b38e6cfcaac813029caf9b656b55&oe=5CC72056"
+            alt="Jesús Alfredo Sánchez photo" height="200px" width="200px">
+        </div>
+      </div>
+
+    </div>
+    <!-- Portfolio section -->
+    <div id="portfolio">
+      <h2><i class="fa fa-briefcase"></i> Portfolio</h2>
+      <hr>
+      <div class="row">
+        <!--1st-->
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="img-thumbnail rounded project-fitting">
+            <!-- Being as an ocean tribute webpage project-->
+            <a href="https://codepen.io/Talen_sb/full/rderOQ" target=" "><img src="https://i.imgur.com/YCdwO4t.png" alt="Being as an ocean portfolio preview"></a>
+            <div class="caption col-caption">
+              <em>Tribute Webpage Project</em>
+            </div>
+          </div>
+        </div>
+        <!--2nd-->
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="img-thumbnail rounded project-fitting">
+            <!-- Placeholder image -->
+            <a href="https://gsus.github.io/TaskList/" target=" "><img src="https://i.imgur.com/pt7HrbQ.png" alt="Task List App preview">
+            <div class="caption col-caption"></a>
+              <em>Task List App</em>
+            </div>
+          </div>
+        </div>
+        <!--3rd-->
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="img-thumbnail rounded project-fitting">
+            <!-- Placeholder image-->
+            <img src="http://via.placeholder.com/275x210" alt="second placeholder image">
+            <div class="caption col-caption">
+              <em>Project Placeholder</em>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Row -->
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="img-thumbnail rounded project-fitting">
+            <!-- Placeholder image -->
+            <img src="http://via.placeholder.com/275x210" alt="placeholder image">
+            <div class="caption col-caption">
+              <em>Project Placeholder</em>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="img-thumbnail rounded project-fitting">
+            <!-- Placeholder image -->
+            <img src="http://via.placeholder.com/275x210" alt="placeholder image">
+            <div class="caption col-caption">
+              <em>Project Placeholder</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact section -->
+    <div id="contact">
+      <h2><i class="far fa-comments"></i> Contact me</h2>
+      <hr>
+      <div class="row" style="padding-top: 25px;">
+        <div class="col">
+          <form action="">
+            <input type="text" placeholder="Name" required>
+            <br>
+            <input type="text" placeholder="E-mail address" required>
+            <br>
+            <textarea rows="5" cols="10" placeholder="Message" required></textarea>
+            <button class="btn btn-primary send-button" type="submit" style="margin: 15px 0px;"><i class="fas fa-paper-plane"></i>
+              Send</button>
+          </form>
+
+        </div>
+
+        <div class="col">
+          <p>Do you want to get in touch with me? <br>Feel free to do so! <br>I'll
+            try to respond as soon as possible ^^<br>You can also check me out here</p>
+          <!-- Social media buttons -->
+          <div id="social-media">
+            <a href="https://www.linkedin.com/in/gsus-asb/" target=" "><button class="btn"><i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://twitter.com/Gsus_asb" target=" "><button class="btn"><i class="fab fa-twitter"></i></button></a>
+            <a href="https://www.instagram.com/gsus_asb/" target=" "><button class="btn"><i class="fab fa-instagram"></i></button></a>
+            <a href="https://github.com/Gsus" target=" "><button class="btn"><i class="fab fa-github"></i></button></a>
+            <br>
+            <p><i class="fa fa-envelope"></i> usjasb@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <hr>
+    <p><i class="fa fa-code"></i> with <i class="fa fa-music"></i> & <i class="fa fa-heart"></i> by Jesús Sánchez<br><i
+        class="fa fa-map-marker-alt"></i> Punto Fijo, Venezuela. <br>Back to the top? Click <a href="#navigation-bar">here
+        <i class="fas fa-hand-point-up"></i></a></p>
+  </footer>
+</body>
+
+</html>
