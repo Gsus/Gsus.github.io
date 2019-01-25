@@ -146,7 +146,6 @@ h3 {
   opacity: 1;
 }
 
-
 .project-fitting {
   margin: 20px;
 }
@@ -194,6 +193,11 @@ h3 {
   color: black;
   border: 2px solid #010f18;
   opacity: 1;
+}
+
+#social-media a:nth-of-type(5) {
+  color: black;
+  text-decoration: none;
 }
 
 #contact form {
@@ -257,11 +261,10 @@ footer {
   padding-top: 35px;
   font-family: 'Lobster', Calibri;
   font-size: 19px;
-  color: #002966;
   text-shadow: 4px 4px 4px #66a3ff;
 }
 
 footer p a {
+  /* text-shadow: 4px 4px 4px #888; */
   text-decoration: none;
-  text-shadow: 4px 4px 4px #888;
 }
