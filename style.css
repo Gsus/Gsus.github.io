@@ -11,7 +11,7 @@ body {
   background-color: gainsboro;
   background-image: url(http://www.dovecor.co.za/wp-content/uploads/2015/02/Music-notes2.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
