@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', Helvetica, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
   background-color: gainsboro;
   background-image: url(img/music-bg.jpg);
   background-repeat: no-repeat;
@@ -16,17 +16,22 @@ body {
 }
 
 .lobster-font1 {
-  font-family: 'Lobster', cursive, sans-serif;
+  font-family: "Lobster", cursive, sans-serif;
 }
 
 .lobster-font2 {
-  font-family: 'Lobster Two', cursive, sans-serif;
+  font-family: "Lobster Two", cursive, sans-serif;
 }
 
 hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
   width: 50%;
 }
 
@@ -45,7 +50,7 @@ hr {
   font-weight: bold;
   display: inline;
   float: right;
-  padding: 15px 15px 0px 15px;
+  margin: 10px 15px 10px 0px;
   text-shadow: 4px 4px 4px #888;
 }
 
@@ -58,26 +63,34 @@ hr {
 /* About section */
 
 #about {
-  margin-top: 90px;
+  margin-top: 80px;
   padding: 30px 70px;
   background-color: aliceblue;
   border-radius: 5px;
   box-sizing: border-box;
   margin-left: 2px;
   width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, .2), rgba(0, 0, 0, .65), rgba(255, 255, 255, .2)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.65),
+      rgba(255, 255, 255, 0.2)
+    ),
     url(img/web-design-bg.jpg);
-  /*https://usercontent2.hubstatic.com/13511691.jpg <-- Old pic*/
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
 #about hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 #about img {
@@ -88,25 +101,33 @@ hr {
 }
 
 #about h2 {
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
   color: white;
   text-align: center;
   padding-top: 0px;
   text-shadow: 4px 4px 4px black;
 }
 
-#about h4,
-h3 {
+#about h3,
+blockquote p {
   text-align: center;
   padding-top: 30px;
   color: white;
   text-shadow: 4px 4px 4px black;
 }
 
+#about footer {
+  color: #d3d4d6;
+}
+
+#about ul {
+  padding: 0;
+}
+
 #about li {
   font-size: 22px;
   display: inline;
-  padding: 15px 10px 0px 10px;
+  margin: 15px 5px 0px 5px;
   text-shadow: 4px 4px 4px black;
   color: white;
 }
@@ -130,37 +151,25 @@ h3 {
 #portfolio h2 {
   color: #ffa500;
   text-shadow: 4px 4px 4px #ffc14d;
-  font-family: 'Lobster Two', cursive;
-}
-
-.img-thumbnail {
-  background-color: #f2f2f2;
-}
-
-.img-thumbnail p {
-  margin-top: 0.4em;
+  font-family: "Lobster Two", cursive;
 }
 
 #portfolio img {
   width: 100%;
   border-radius: 5px;
-  opacity: 0.9;
 }
 
-#portfolio img:hover {
+#portfolio .card {
+  opacity: 0.93;
+  transition: opacity 0.4s;
+}
+
+#portfolio .card:hover {
   opacity: 1;
 }
 
 #portfolio .row {
   margin-right: 10px;
-}
-
-.project-fitting {
-  margin: 20px;
-}
-
-.col-caption {
-  font-family: 'Raleway', sans-serif;
 }
 
 /* Contact me section */
@@ -175,7 +184,7 @@ h3 {
 #contact h2 {
   color: #1663c7;
   text-shadow: 4px 4px 4px #10b891;
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 #contact .col-md p {
@@ -196,9 +205,7 @@ h3 {
 }
 
 #social-media .btn:hover {
-  background-color: white
-    /*#e7f5fe*/
-  ;
+  background-color: white /*#e7f5fe*/;
   color: black;
   border: 2px solid #010f18;
   opacity: 1;
@@ -209,11 +216,12 @@ h3 {
   text-decoration: none;
 }
 
-
 #contact p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
+
+/* ====== Other ==========*/
 
 /* Placeholder color.
 It's necessary to specify this for every browser or otherwise it'll be ignored (thank you, fuxia and hitautodestruct from Stackoverflow)*/
@@ -251,14 +259,9 @@ It's necessary to specify this for every browser or otherwise it'll be ignored (
   color: #008ae6;
 }
 
-footer {
+.final-footer {
   padding-top: 35px;
-  font-family: 'Lobster', Calibri;
+  font-family: Raleway;
   font-size: 19px;
-  text-shadow: 4px 4px 4px #66a3ff;
-}
-
-footer p a {
-  /* text-shadow: 4px 4px 4px #888; */
-  text-decoration: none;
+  text-shadow: 4px 4px 4px #66a3ff8a;
 }

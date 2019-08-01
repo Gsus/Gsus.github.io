@@ -1,175 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Jesús Sánchez" />
+    <meta name="description" content="Self-taught Web Developer" />
+    <title>Jesús Sánchez</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="ext/bootstrap.min.css" />
+    <!--Font Awesome Icons-->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Jesús Sánchez - Front End Developer</title>
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="ext/bootstrap.min.css">
-	<!--Font Awesome Icons-->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
-		integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous">
-	</script>
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<!--CSS-->
-	<link href="style.css" rel="stylesheet" type="text/css">
-</head>
+  <body>
+    <div class="container">
+      <!-- Navigation bar-->
+      <nav id="navigation-bar">
+        <ul>
+          <li class="lobster-font1" style="float: left; font-size: 40px">
+            Jesús Sánchez <i class="fa fa-code"></i>
+          </li>
+          <div class="lobster-font2">
+            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+          </div>
+        </ul>
+      </nav>
+      <!-- About section -->
+      <div id="about">
+        <h2><i class="fa fa-info-circle"></i> About</h2>
+        <hr />
+        <!-- Description and image -->
+        <div class="row text-center">
+          <div class="col-md">
+            <h3>
+              Hey! <br />I'm Jesús<br />
+              Electronic Engineer, and Self-taught Web Developer<br />
+            </h3>
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                Anything's worth working for if you want it enough
+              </p>
+              <footer class="blockquote-footer">
+                Cassidy Roy in
+                <cite title="Source Title">The Spectacular Now</cite>
+              </footer>
+            </blockquote>
+            <hr />
+            <ul>
+              <li><i class="fa fa-graduation-cap"></i> Enthusiast</li>
+              <li><i class="fa fa-language"></i> Polyglot</li>
+              <li><i class="fa fa-music"></i> Musician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio section -->
+      <div id="portfolio">
+        <h2><i class="fa fa-briefcase"></i> Portfolio</h2>
+        <hr />
+        <div class="row">
+          <!--1st-->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img
+                class="card-img-top"
+                src="img/Previews/RGBGuessingGamePreview.png"
+                alt="RGB Guessing Game preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RGB Guessing Game</h5>
+                <div class="card-body">
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://gsus.github.io/RGB-Guessing-Game/"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="btn btn-outline-secondary"
+                    href="https://github.com/Gsus/RGB-Guessing-Game"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2nd-->
+          <!-- Portfolio Website -->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img
+                class="card-img-top"
+                src="img/Previews/portfolioSite.png"
+                alt="Portfolio website preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">This site!</h5>
+                <div class="card-body">
+                  <a
+                    class="btn btn-outline-secondary"
+                    href="https://github.com/Gsus/Gsus.github.io/"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3rd-->
+          <!-- Loan Calculator -->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img
+                src="img/Previews/LoanCalculatorPreview.png"
+                alt="Loan Calculator App Preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Loan Calculator</h5>
+                <div class="card-body">
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://gsus.github.io/Loan-Calculator/"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="btn btn-outline-secondary"
+                    href="https://github.com/Gsus/Loan-Calculator"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Row -->
+        <div class="row justify-content-center">
+          <!-- 1st -->
+          <!-- Book List -->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img src="img/Previews/BookList.png" alt="Booklist App Preview" />
+              <div class="card-body">
+                <h5 class="card-title">Book List</h5>
+              </div>
+              <div class="card-body">
+                <a
+                  class="btn btn-outline-primary"
+                  href="https://gsus.github.io/Book-List/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  class="btn btn-outline-secondary"
+                  href="https://github.com/Gsus/Book-List"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--2nd-->
+          <!-- Todo List -->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img
+                src="img/Previews/TodoList.png"
+                alt="Todo List App preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Todo List</h5>
+              </div>
+              <div class="card-body">
+                <a
+                  class="btn btn-outline-primary"
+                  href="https://gsus.github.io/Todo-List/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  class="btn btn-outline-secondary"
+                  href="https://github.com/Gsus/Todo-List"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3rd -->
+          <!-- Task List -->
+          <div class="col-md">
+            <div class="card mb-4">
+              <img
+                class="card-img-top"
+                src="img/Previews/TaskListPreview.png"
+                alt="Task List App preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Task List</h5>
+                <div class="card-body">
+                  <a
+                    class="btn btn-outline-primary"
+                    href="https://gsus.github.io/TaskList/"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="btn btn-outline-secondary"
+                    href="https://github.com/Gsus/TaskList"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact section -->
+      <div id="contact">
+        <h2><i class="far fa-comments"></i> Contact me</h2>
+        <hr />
+        <div class="row">
+          <div class="col-md">
+            <p>
+              Do you want to get in touch with me? <br />Feel free to do so!
+              <br />I'll try to respond as soon as possible ^^<br />You can also
+              check me out here and send me a DM
+            </p>
+            <!-- Social media buttons -->
+            <div id="social-media">
+              <a href="https://www.linkedin.com/in/gsus-asb/" target="_blank"
+                ><button class="btn"><i class="fab fa-linkedin-in"></i></button
+              ></a>
+              <a href="https://twitter.com/Gsus_asb" target="_blank"
+                ><button class="btn"><i class="fab fa-twitter"></i></button
+              ></a>
+              <a href="https://www.instagram.com/gsus_asb/" target="_blank"
+                ><button class="btn"><i class="fab fa-instagram"></i></button
+              ></a>
+              <a href="https://github.com/Gsus" target="_blank"
+                ><button class="btn"><i class="fab fa-github"></i></button
+              ></a>
+              <br />
+              <a href="mailto:usjasb@gmail.com">
+                <p><i class="fa fa-envelope"></i> usjasb@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<body>
-	<div class="container">
-		<!-- Navigation bar-->
-		<nav id="navigation-bar">
-			<ul>
-				<li class="lobster-font1" style="float: left; font-size: 40px; padding-bottom: 30px; margin-left: -50px;">Jesús
-					Sánchez <i class="fa fa-code"></i> Front End Developer </li>
-				<div class="lobster-font2">
-					<li><a href="#contact">Contact me</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#about">About</a></li>
-				</div>
-			</ul>
-		</nav>
-		<!-- About section -->
-		<div id="about">
-			<h2><i class="fa fa-info-circle"></i> About</h2>
-			<hr>
-			<!-- Description and image -->
-			<div class="row text-center">
-				<div class="col-md-8">
-					<h3>Electronic Engineering graduand. <br>General Enthusiast. <br>Learning Web Development. <br><br>"Anything's
-						worth working for if you want it enough"</h3>
-					<hr>
-					<ul>
-						<li><i class="fa fa-graduation-cap"></i>Enthusiast</li>
-						<li><i class="fa fa-language"></i> Polyglot</li>
-						<li><i class="fa fa-music"></i> Musician</li>
-						<li><i class="fa fa-gamepad"></i> Gamer</li>
-					</ul>
-				</div>
-
-				<div class="col-md-4">
-					<img src="img/gsus.jpg" alt="Jesús Alfredo Sánchez photo" height="200px" width="200px">
-				</div>
-			</div>
-
-		</div>
-		<!-- Portfolio section -->
-		<div id="portfolio">
-			<h2><i class="fa fa-briefcase"></i> Portfolio</h2>
-			<hr>
-			<div class="row">
-				<!--1st-->
-				<div class="col-sm-4">
-					<div class="img-thumbnail rounded project-fitting">
-						<!-- Task List App -->
-						<a href="https://gsus.github.io/TaskList/" target="_blank">
-							<img src="img/Previews/TaskListPreview.png" alt="Task List App preview">
-						</a>
-						<div class="caption col-caption bg-white">
-							<em>Task List</em>
-						</div>
-						<p>Creates, filters, and keeps track of tasks<br>
-							<small>
-								Vanilla JavaScript
-								<br>
-								Materialize
-							</small>
-						</p>
-					</div>
-				</div>
-				<!--2nd-->
-				<div class="col-sm-4">
-					<div class="img-thumbnail rounded project-fitting">
-						<!-- RGB Guessing Game -->
-						<a href="https://gsus.github.io/RGB-Guessing-Game" target="_blank">
-							<img src="img/Previews/RGBGuessingGamePreview.png" alt="placeholder image">
-						</a>
-						<div class="caption col-caption bg-white">
-							<em>RGB Guessing Game</em>
-						</div>
-						<p>A RGB guessing game with 3 difficulty modes <br>
-							<small>Vanilla JavaScript</small>
-						</p>
-					</div>
-				</div>
-				<!--3rd-->
-				<div class="col-sm-4">
-					<div class="img-thumbnail rounded project-fitting">
-						<!-- Loan Calculator -->
-						<a href="https://gsus.github.io/Loan-Calculator/" target="_blank">
-							<img src="img/Previews/LoanCalculatorPreview.png" alt="Loan Calculator Preview">
-						</a>
-						<div class="caption col-caption bg-white">
-							<em>Loan Calculator</em>
-						</div>
-						<p>Calculates payments for a loan<br><small>Vanilla JavaScript <br> Bootstrap 4</small></p>
-					</div>
-				</div>
-			</div>
-			<!-- Second Row -->
-			<div class="row justify-content-center">
-				<div class="col-sm-4">
-					<div class="img-thumbnail rounded project-fitting">
-						<!-- Being as an ocean tribute webpage project-->
-						<a href="https://codepen.io/Talen_sb/full/rderOQ" target="_blank">
-							<img src="img/Previews/BAAOPreview.png" alt="Being as an ocean portfolio preview">
-						</a>
-						<div class="caption col-caption bg-white">
-							<em>Tribute Webpage Project</em>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="img-thumbnail rounded project-fitting">
-						<!-- Placeholder image -->
-						<img src="http://via.placeholder.com/275x210" alt="placeholder image">
-						<div class="caption col-caption bg-white">
-							<em><small>Project Placeholder</small></em>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Contact section -->
-		<div id="contact">
-			<h2><i class="far fa-comments"></i> Contact me</h2>
-			<hr>
-			<div class="row">
-				<div class="col-md">
-					<p>Do you want to get in touch with me? <br>Feel free to do so! <br>I'll
-						try to respond as soon as possible ^^<br>You can also check me out here and send me a DM</p>
-					<!-- Social media buttons -->
-					<div id="social-media">
-						<a href="https://www.linkedin.com/in/gsus-asb/" target="_blank"><button class="btn"><i
-									class="fab fa-linkedin-in"></i></button></a>
-						<a href="https://twitter.com/Gsus_asb" target="_blank"><button class="btn"><i
-									class="fab fa-twitter"></i></button></a>
-						<a href="https://www.instagram.com/gsus_asb/" target="_blank"><button class="btn"><i
-									class="fab fa-instagram"></i></button></a>
-						<a href="https://github.com/Gsus" target="_blank"><button class="btn"><i
-									class="fab fa-github"></i></button></a>
-						<br>
-						<a href="mailto:usjasb@gmail.com">
-							<p><i class="fa fa-envelope"></i> usjasb@gmail.com</p>
-						</a>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<footer class="text-center text-dark">
-		<hr>
-		<p><i class="fa fa-code"></i> with <i class="fa fa-music"></i> & <i class="fa fa-heart"></i> by Jesús Sánchez<br><i
-				class="fa fa-map-marker-alt"></i> Punto Fijo, Venezuela. <br>Back to the top? Click <a href="#navigation-bar"
-				class="text-dark">here
-				<i class="fas fa-hand-point-up"></i></a></p>
-	</footer>
-</body>
-
+    <footer class="text-center text-dark final-footer">
+      <hr />
+      <p>
+        <i class="fa fa-code"></i> with <i class="fa fa-music"></i> &
+        <i class="fa fa-heart"></i> by Jesús Sánchez<br /><i
+          class="fa fa-map-marker-alt"
+        ></i>
+        Punto Fijo, Venezuela. <br />Back to the top? Click
+        <a href="#navigation-bar" class="text-dark"
+          >here <i class="fas fa-hand-point-up"></i
+        ></a>
+      </p>
+    </footer>
+  </body>
 </html>
