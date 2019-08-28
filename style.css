@@ -1,7 +1,8 @@
 /* General Stuff */
-
 * {
   box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
 }
 
 body {
@@ -9,10 +10,10 @@ body {
   padding: 0;
   font-family: "Arial", Helvetica, sans-serif;
   background-color: gainsboro;
-  background-image: url(img/music-bg.jpg);
+  /* background-image: url(img/music-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .lobster-font1 {
@@ -36,25 +37,37 @@ hr {
 }
 
 /* Navigation Bar section */
-
-#navigation-bar {
-  list-style: none;
+#navbar {
+  background: rgba(187, 187, 187, 0.377);
+  z-index: 1;
+  overflow: auto;
   width: 100%;
-  border-radius: 6px;
-  padding-top: 10px;
-  padding-bottom: 175px;
+  position: fixed;
 }
 
-#navigation-bar li {
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+  font-size: 40px;
+  display: block;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar li {
   font-size: 26px;
   font-weight: bold;
-  display: inline;
-  float: right;
+  float: left;
   margin: 10px 15px 10px 0px;
   text-shadow: 4px 4px 4px #888;
 }
 
-#navigation-bar li a {
+#navbar li a {
+  display: block;
+  padding: 10px;
   text-decoration: none;
   color: white;
   text-shadow: 4px 4px 4px #555;
@@ -63,13 +76,13 @@ hr {
 /* About section */
 
 #about {
-  margin-top: 80px;
-  padding: 30px 70px;
+  /* margin-top: 300px; */
+  /* padding: 30px 70px; */
   background-color: aliceblue;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-left: 2px;
-  width: 100%;
+  /* margin-left: 2px; */
+  height: 100vh;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.2),
       rgba(0, 0, 0, 0.65),
@@ -261,7 +274,7 @@ It's necessary to specify this for every browser or otherwise it'll be ignored (
 
 .final-footer {
   padding-top: 35px;
-  font-family: Raleway;
+  font-family: Raleway, cursive, sans-serif;
   font-size: 19px;
   text-shadow: 4px 4px 4px #66a3ff8a;
 }
