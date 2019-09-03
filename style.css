@@ -86,11 +86,6 @@ hr {
 }
 
 @media(max-width: 500px){
-  #navbar {
-    height: 5.5rem;
-    overflow-y: hidden;
-  }
-
   #navbar h1{
     font-size: 1.5rem;
   }
@@ -146,18 +141,6 @@ hr {
   width: auto;
 }
 
-#about h2 {
-  font-family: "Lobster Two", cursive;
-  color: white;
-  text-align: center;
-  padding-top: 0px;
-  text-shadow: 4px 4px 4px black;
-}
-
-#about h3 {
-  padding-bottom: 1.2rem;
-}
-
 #about h3,
 blockquote p {
   text-align: center;
@@ -192,8 +175,7 @@ blockquote p {
 
 /* Portfolio Section */
 
-#portfolio,
-#contact {
+#portfolio {
   text-align: center;
   padding-left: 26px;
   padding-top: 10px;
@@ -233,9 +215,12 @@ blockquote p {
 
 /* Contact me section */
 
+#social-media {
+  margin-bottom: 1.7rem;
+}
+
 #social-media .btn {
   font-size: 20px;
-  /*background-color: lightskyblue;*/
   background-color: #010f18;
   color: white;
   border-style: none;
@@ -252,10 +237,6 @@ blockquote p {
   opacity: 1;
 }
 
-#social-media a:nth-of-type(5) {
-  color: black;
-  text-decoration: none;
-}
 /* ====== Other ==========*/
 
 /* Placeholder color.
