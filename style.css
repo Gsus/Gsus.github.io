@@ -8,12 +8,9 @@ body {
   padding: 0;
   font-family: "Arial", Helvetica, sans-serif;
   background-color: gainsboro;
-  /* background-image: url(img/music-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
+/* Utility classes */
 .lobster-font1 {
   font-family: "Lobster", cursive, sans-serif;
 }
@@ -32,7 +29,8 @@ body {
   color: #39cbf4;
 }
 .color-4 {
-  color: #faf6eb;
+  color: #84dff8;
+  /* color: #faf6eb; */
 }
 
 hr {
@@ -87,6 +85,21 @@ hr {
   text-shadow: 4px 4px 4px #555;
 }
 
+@media(max-width: 500px){
+  #navbar {
+    height: 5.5rem;
+    overflow-y: hidden;
+  }
+
+  #navbar h1{
+    font-size: 1.5rem;
+  }
+
+  #navbar li {
+    font-size: 1.1rem;
+  }
+}
+
 /* About section */
 
 .center {
@@ -99,13 +112,10 @@ hr {
 }
 
 #about {
-  /* margin-top: 300px; */
-  /* padding: 30px 70px; */
   text-align: center;
   background-color: aliceblue;
   border-radius: 5px;
   box-sizing: border-box;
-  /* margin-left: 2px; */
   height: 100vh;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.2),
@@ -116,7 +126,6 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Raleway", sans-serif;
-  text-align: center;
 }
 
 #about hr {
@@ -185,21 +194,22 @@ blockquote p {
 
 #portfolio,
 #contact {
-  margin-top: 180px;
   text-align: center;
   padding-left: 26px;
   padding-top: 10px;
   padding-right: 25px;
   background-color: #faf9d1;
   border-radius: 5px;
+  height: 100vh;
   background-image: url(img/coffee-notes.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #portfolio h2 {
-  color: #ffa500;
-  text-shadow: 4px 4px 4px #ffc14d;
+  font-weight: normal;
+  color: #afcdfa;
+  /* text-shadow: 4px 4px 4px #fca0598c; */
   font-family: "Lobster Two", cursive;
 }
 
@@ -222,24 +232,6 @@ blockquote p {
 }
 
 /* Contact me section */
-
-#contact {
-  background-color: #9cc2f4;
-  background-image: url(img/world-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#contact h2 {
-  color: #1663c7;
-  text-shadow: 4px 4px 4px #10b891;
-  font-family: "Lobster Two", cursive;
-}
-
-#contact .col-md p {
-  font-size: 20px;
-  margin: 15px 0;
-}
 
 #social-media .btn {
   font-size: 20px;
@@ -264,12 +256,6 @@ blockquote p {
   color: black;
   text-decoration: none;
 }
-
-#contact p {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-}
-
 /* ====== Other ==========*/
 
 /* Placeholder color.
