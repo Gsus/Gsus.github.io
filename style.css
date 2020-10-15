@@ -54,7 +54,7 @@ body.dark .highlighted {
 .fade-in {
   opacity: 0;
   transform: translateY(5%);
-  transition: opacity 0.75s ease-in, transform 0.75s ease-in;
+  transition: opacity 0.7s ease-in, transform 0.7s ease-in;
 }
 
 .appear {
@@ -237,12 +237,17 @@ body.dark #home #home-content #main-photo {
   margin: 0.65rem 0 2.5rem; */
   justify-content: space-between;
   max-width: 65%;
-  margin: 0.65rem 0 2.5rem;
+  /* margin: 0.65rem 0 2.5rem; */
+  margin: 0.65rem 0 0;
+}
+
+#home #home-content .btn-blue {
+  background-color: var(--darker-primary-blue);
 }
 
 .btns {
   /* text-align: center; */
-  margin: 0.875rem 0 1.77rem;
+  margin: 0.875rem 0 2.9rem;
 }
 
 .btn {
@@ -682,15 +687,22 @@ body.dark #contact-content h2 {
 }
 
 #contact .bmc-btn {
-  height: 2.5rem;
-  font-size: 1.5rem;
-  background-color: var(--dark-blue) !important;
-  transition: background-color 0.4s;
+  opacity: 0.65;
+  height: 2.35rem;
+  padding: 0 1.15rem;
+  font-size: 1.3rem;
+  /* background-color: #5F7FFF; */
+  transition: background-color 0.3s, opacity 0.3s ease-in;
   box-shadow: 0px 3px 6px #00000029;
 }
 
+body.dark #contact .bmc-btn {
+  background-color: var(--dark-blue) !important;
+  color: var(--light-gray) !important;
+}
+
 #contact .bmc-btn:hover {
-  background-color: var(--blue) !important;
+  opacity: 1;
 }
 
 #contact .bmc-btn svg {
@@ -713,6 +725,7 @@ body.dark #contact-content h2 {
   position: absolute;
   bottom: 1%;
   right: 2%;
+  z-index: 1;
   transition: all 0.3s;
   text-decoration: none;
   color: #2f5c9b;
@@ -721,59 +734,6 @@ body.dark #contact-content h2 {
 #contact #contact-chevron:hover {
   transform: scale(0.85);
 }
-
-/* (max-height: 600px)? */
-/* Small devices */
-/* @media (max-width: 420px) {
-  #navbar h1 {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem; THIS 
-  }
-
-  #navbar ul li a {
-    font-size: 0.9rem;
-  }
-
-  #home {
-    padding-top: 2.3rem;
-    background: linear-gradient(0deg, var(--blue) 25vh, var(--light-gray) 25vh); THIS
-  }
-
-  #home #home-content h1 {
-    font-size: 2.7rem;
-  }
-
-  .card:hover,
-  .card:focus-within {
-    transform: scale(1.4);
-  }
-
-  .card:first-of-type:hover,
-  .card:first-of-type:focus-within {
-    transform: scale(1.4) translateX(20%);
-  }
-  .card:nth-of-type(2):hover,
-  .card:nth-of-type(2):focus-within {
-    transform: scale(1.5) translateX(-15%);
-  }
-  .card:nth-of-type(4):hover,
-  .card:nth-of-type(4):focus-within {
-    transform: scale(1.5) translateX(-15%);
-  }
-  .card:last-of-type:hover,
-  .card:last-of-type:focus-within {
-    transform: scale(1.4) translateX(20%);
-  }
-
-  #contact-content h2 {
-    font-size: 1.9rem;
-  }
-
-  #contact #contact-content #contact-illustration {
-    transform: scale(0.8);
-    transform-origin: bottom;
-  }
-} */
 
 @media (max-height: 550px) and (orientation: portrait) {
   #contact {

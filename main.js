@@ -12,6 +12,7 @@ const toggleTheme = (e) => {
     // If adding dark mode
     // Change toggler's img to a sun
     changeImgPath(themeToggler.firstElementChild, "Mobile/SVGs/sun.svg");
+
     // Change icons' colors
     homeIconsStrokes.forEach(
       (stroke) => stroke.setAttribute("stroke", "#5d9ad8") // --lighter-primary-blue
@@ -19,14 +20,17 @@ const toggleTheme = (e) => {
     contactIconsStrokes.forEach(
       (stroke) => stroke.setAttribute("stroke", "#f4f4f4") // --light-gray
     );
+
     // Change contact section's chevron's background
     contactChevronBackground.setAttribute("fill", "#214467"); // --darker-primary-blue
+
     // Take note of the theme in LS
     localStorage.setItem("darkModeOn", "true");
   } else {
     // If removing dark mode
     // Change toggler's img to a moon
     changeImgPath(themeToggler.firstElementChild, "Mobile/SVGs/moon.svg");
+
     // Change icons' colors
     homeIconsStrokes.forEach(
       (stroke) => stroke.setAttribute("stroke", "#214467") // --darker-primary-blue
@@ -34,8 +38,10 @@ const toggleTheme = (e) => {
     contactIconsStrokes.forEach(
       (stroke) => stroke.setAttribute("stroke", "#001a34") // --dark-blue
     );
+
     // Change contact section's chevron's background
     contactChevronBackground.setAttribute("fill", "#3f6e9e"); // --blue
+
     // Take note of the theme in LS
     localStorage.setItem("darkModeOn", "false");
   }
@@ -75,8 +81,8 @@ if (!localStorage.getItem("darkModeOn")) {
 // ===============================================================
 
 // This button is generated through a script, so add the fade class afterwards.
-const bmc = document.querySelector(".bmc-btn-container");
-// bmc.classList.add("fade-in"); ==== UNCOMMENT THISSSSSSSSSSSSSS =====
+const bmcContainer = document.querySelector(".bmc-btn-container");
+bmcContainer.classList.add("fade-in");
 
 // ========= Change images depending on a certain media query ==========
 const smallSize = matchMedia("(max-width: 767px)"),
