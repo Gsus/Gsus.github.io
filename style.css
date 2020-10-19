@@ -241,8 +241,12 @@ body.dark #home #home-content #main-photo {
   margin: 0.65rem 0 0;
 }
 
-#home #home-content .btn-blue {
+/* #home #home-content .btn-blue {
   background-color: var(--darker-primary-blue);
+} */
+
+body.dark #home #home-content .btn-blue:focus {
+  box-shadow: 0 0 0 4px var(--dark-blue), 0 0 0 8px #2f5c9b;
 }
 
 .btns {
@@ -277,7 +281,8 @@ body.dark #home #home-content #main-photo {
 
 .btn-blue:hover {
   /* background: #2f5c9b; */
-  background: var(--mid-blue);
+  /* background: var(--mid-blue); */
+  background: #022b55; /* Kind of like --dark-blue but slightly lighter*/
 }
 
 .btn-white {
@@ -299,7 +304,8 @@ body.dark .btn-blue {
 }
 
 body.dark .btn-blue:hover {
-  background: var(--dark-blue);
+  /* background: var(--dark-blue); */
+  background: #022b55; /* Kind of like --dark-blue but slightly lighter*/
 }
 
 /* body.dark .btn-white {
@@ -362,6 +368,7 @@ body.dark #about {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   text-align: center;
+  margin-bottom: 1.2rem;
   /* margin: 0 auto; */
   /* max-width: 85%; */
   /* margin-top: 0.7rem; */
@@ -379,6 +386,11 @@ body.dark #about {
 
 #about .tech li img {
   margin: 0 auto;
+}
+
+#home .btn i,
+#about .btn i {
+  vertical-align: middle;
 }
 
 #about img {
