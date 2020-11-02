@@ -830,13 +830,42 @@ body.dark #contact .bmc-btn {
     justify-content: space-evenly;
   }
 
+  #home #home-content .social {
+    max-width: 50%;
+  }
+
   .card {
+    max-width: 200px;
     transform: scale(1.2);
     /* margin-top: 1.5rem; */
   }
 
+  .card .info {
+    width: 95%;
+  }
+
+  .card .info .btns {
+    margin: initial;
+    max-width: initial;
+    margin: 0.45rem auto;
+    display: block;
+  }
+
+  .card .info .btns .btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #about .btn {
+    width: 33%;
+  }
+
   #contact-content h2 {
     font-size: 2.45rem;
+  }
+
+  #contact-content h3 {
+    margin-top: 0.12rem;
   }
 }
 
