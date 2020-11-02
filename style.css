@@ -22,9 +22,7 @@ body {
   font-family: "Baloo Tamma 2", Helvetica, sans-serif;
   background-color: var(--light-gray);
   color: var(--dark-blue);
-  border: 1px solid rgba(0, 26, 52, 0.103);
   margin: 0 auto;
-  border: none;
   overflow-x: hidden;
   transition: background 0.4s, color 0.4s;
 }
@@ -41,13 +39,9 @@ body.dark {
 
 .highlighted {
   color: var(--mid-blue);
-  /* color: var(--darker-primary-blue); */
-  /* color: var(--dark-blue); */
 }
 
 body.dark .highlighted {
-  /* color: var(--light-gray); THIS */
-  /* color: var(--lighter-primary-blue); */
   color: var(--light-gray);
 }
 
@@ -61,10 +55,6 @@ body.dark .highlighted {
   transform: translateY(0);
   opacity: 1;
 }
-
-/* main {
-  color: var(--dark-blue);
-} */
 
 a:focus,
 div:focus {
@@ -224,8 +214,8 @@ body.dark #home #home-content #main-text {
   width: 240px;
   height: auto;
   border-radius: 50%;
-  border: 3px solid var(--darker-primary-blue);
-  box-shadow: 0 3px 6px rgba(0, 26, 52, 0.25);
+  border: 3px solid var(--light-gray);
+  box-shadow: 0 3px 6px rgba(0, 26, 52, 0.3);
 }
 
 body.dark #home #home-content #main-photo {
@@ -1242,12 +1232,14 @@ body.dark #contact .bmc-btn {
 
   #contact-content h2 {
     /* font-size: 2.55rem; */
-    font-size: 2.7rem;
+    /* font-size: 2.7rem; */
+    font-size: 3rem;
   }
 
   #contact-content h3 {
     max-width: initial;
     margin: initial;
+    font-size: 1.55rem;
   }
 
   #contact-content .social a svg {
@@ -1389,8 +1381,12 @@ body.dark #contact .bmc-btn {
   }
 
   #contact-content h2 {
-    /* font-size: 3.05rem; */
-    font-size: 2.85rem;
+    font-size: 3.25rem;
+    /* font-size: 2.85rem; */
+  }
+
+  #contact-content h3 {
+    font-size: 1.65rem;
   }
 
   #contact-content .social a:nth-of-type(2) {
