@@ -75,7 +75,7 @@ div:focus {
 /* ======= Navbar ======= */
 
 #navbar {
-  background: #f4f4f4cc;
+  background: #f4f4f4ee;
   position: fixed;
   z-index: 3;
   opacity: 1;
@@ -84,7 +84,7 @@ div:focus {
 }
 
 body.dark #navbar {
-  background: #001a34cc;
+  background: #001a34ee;
 }
 
 #navbar .heading {
@@ -209,7 +209,7 @@ body.dark #home #home-content #main-text {
   /* text-align: center; */
   letter-spacing: 0.92px;
   line-height: 1;
-  margin-top: 4.875rem;
+  margin-top: 3.6rem;
   margin-bottom: 0.5rem;
 }
 
@@ -241,9 +241,14 @@ body.dark #home #home-content #main-photo {
   margin: 0.65rem 0 0;
 }
 
-/* #home #home-content .btn-blue {
-  background-color: var(--darker-primary-blue);
-} */
+body.dark #home #home-content .btn:nth-of-type(2) {
+  color: var(--lighter-primary-blue);
+  background: var(--dark-blue);
+}
+
+body.dark #home #home-content .btn:nth-of-type(2):hover {
+  background: #00152c;
+}
 
 body.dark #home #home-content .btn-blue:focus {
   box-shadow: 0 0 0 4px var(--dark-blue), 0 0 0 8px #2f5c9b;
@@ -277,21 +282,17 @@ body.dark #home #home-content .btn-blue:focus {
 
 .btn-blue {
   color: var(--light-gray);
-  /* border: 1px solid var(--mid-blue); */
 }
 
 .btn-blue:hover {
-  /* background: #2f5c9b; */
-  /* background: var(--mid-blue); */
-  background: #022b55; /* Kind of like --dark-blue but slightly lighter*/
+  background: #345779; /* Kind of like --dark-blue but slightly lighter*/
 }
 
 .btn-white {
   padding-left: 1.225rem;
   padding-right: 1.225rem;
   color: var(--blue);
-  background: none;
-  /* border: 1px solid var(--blue); */
+  background: var(--light-gray);
 }
 
 .btn-white:hover {
@@ -396,6 +397,10 @@ body.dark #about .tech li p {
 }
 
 #about .btn:hover {
+  background: var(--darker-primary-blue);
+}
+
+body.dark #about .btn:hover {
   background: var(--dark-blue);
 }
 
