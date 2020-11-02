@@ -8,6 +8,7 @@ const body = document.querySelector("body"),
 const toggleTheme = (e) => {
   // Add/remove dark mode
   body.classList.toggle("dark");
+
   if (body.classList.contains("dark")) {
     // If adding dark mode
     // Change toggler's img to a sun

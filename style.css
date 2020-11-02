@@ -289,8 +289,8 @@ body.dark #home #home-content .btn-blue:focus {
 }
 
 .btn-white {
-  padding-left: 1.225rem;
-  padding-right: 1.225rem;
+  /* padding-left: 1.225rem;
+  padding-right: 1.225rem; */
   color: var(--blue);
   background: var(--light-gray);
 }
@@ -366,7 +366,7 @@ body.dark #about {
   flex-wrap: wrap;
   /* justify-content: space-between; */
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
   /* margin: 0 auto; */
   /* max-width: 85%; */
   /* margin-top: 0.7rem; */
@@ -393,7 +393,17 @@ body.dark #about .tech li p {
 }
 
 #about .btn {
+  /* background: #2f5983; */
+  background: #396593;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
   box-shadow: 0px 3px 6px #0000003a;
+}
+
+body.dark #about .btn {
+  /* background: initial; */
+  background: #1d4062;
 }
 
 #about .btn:hover {
@@ -1022,9 +1032,10 @@ body.dark #contact .bmc-btn {
     width: auto;
   }
 
-  /* #about .tech {
-    max-width: 85%;
-  } */
+  #about .btn {
+    display: initial;
+    width: initial;
+  }
 
   #about #about-content #about-illustration {
     /* width: 288px; */
