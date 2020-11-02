@@ -250,6 +250,10 @@ body.dark #home #home-content .btn:nth-of-type(2):hover {
   background: #00152c;
 }
 
+body.dark #home #home-content .btn:nth-of-type(2):focus {
+  box-shadow: 0 0 0 4px var(--dark-blue), 0 0 0 8px #2f5c9b;
+}
+
 body.dark #home #home-content .btn-blue:focus {
   box-shadow: 0 0 0 4px var(--dark-blue), 0 0 0 8px #2f5c9b;
 }
