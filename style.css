@@ -111,7 +111,6 @@ body.dark #navbar h1 {
 #navbar ul {
   list-style: none;
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: space-between;
   margin-top: -0.2rem;
   margin-bottom: 0.25rem;
@@ -354,6 +353,10 @@ body.dark #about {
   line-height: 1.25;
 }
 
+#about s {
+  color: #deeefd;
+}
+
 #about .tech {
   list-style: none;
   display: flex;
@@ -472,35 +475,6 @@ body.dark #portfolio {
 }
 
 /*  ---- Projects ------ */
-
-/* .tag {
-  padding: 0 0.8rem;
-  margin-right: 0.5rem;
-  border-radius: 0.625rem;
-  font-size: 0.7rem;
-  display: inline-block;
-} */
-
-/* .tag-html {
-  color: orangered;
-  border: 1px solid orangered;
-  color: #f16528;
-  border: 1px solid var(--mid-blue);
-}
-
-.tag-css {
-  color: steelblue;
-  border: 1px solid steelblue;
-  color: #2eaade;
-  border: 1px solid var(--mid-blue);
-}
-
-.tag-js {
-  color: rgb(212, 180, 2);
-  border: 1px solid rgb(212, 180, 2);
-  color: #fed839;
-  border: 1px solid var(--mid-blue);
-} */
 
 .card {
   max-width: 180px;
@@ -846,6 +820,7 @@ body.dark #contact .bmc-btn {
     margin-right: 0;
   }
 
+  #about hr,
   #about .btn {
     width: 33%;
   }
@@ -1313,20 +1288,25 @@ body.dark #contact .bmc-btn {
   }
 
   #home #home-content #main-photo {
-    width: 280px;
+    /* width: 280px; */
+    width: 300px;
     margin: initial;
   }
 
   #home #home-content #main-text {
-    max-width: 32%;
+    /* max-width: 32%; */
+    max-width: 34.5%;
   }
 
   #home #home-content #main-text h1 {
-    font-size: 3.2rem;
+    /* font-size: 3.2rem; */
+    font-size: 3.4rem;
   }
 
   #home #home-content #main-text p {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
+    font-size: 2.05rem;
+    line-height: 1.25;
   }
 
   /* #home #home-content .social a svg {
