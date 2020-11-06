@@ -215,6 +215,11 @@ body.dark #home #home-content #main-text {
   border-radius: 50%;
   border: 3px solid var(--light-gray);
   box-shadow: 0 3px 6px rgba(0, 26, 52, 0.3);
+  transition: 0.4s transform ease;
+}
+
+#home #home-content #main-photo:hover {
+  transform: scale(1.02);
 }
 
 body.dark #home #home-content #main-photo {
