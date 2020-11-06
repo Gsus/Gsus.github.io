@@ -84,7 +84,7 @@ body.dark #navbar {
 }
 
 #navbar h1,
-#name-in-bg h2 {
+#watermark {
   color: var(--blue);
   font-weight: normal;
   text-transform: uppercase;
@@ -99,7 +99,7 @@ body.dark #navbar h1 {
   color: var(--lighter-primary-blue);
 }
 
-#name-in-bg {
+#watermark {
   display: none;
   pointer-events: none;
 }
@@ -415,10 +415,10 @@ body.dark #about .btn:hover {
   box-shadow: 0 0 0 6px #2f5c9b;
 }
 
-/* #home .btn i,
+#home .btn i,
 #about .btn i {
   vertical-align: middle;
-} */
+}
 
 #about img {
   display: block;
@@ -673,12 +673,8 @@ body.dark #contact-content::before {
   margin-bottom: 1rem;
 }
 
-#contact-content h2,
-#contact-content h3 {
-  font-weight: 500;
-}
-
 #contact-content h2 {
+  font-weight: 500;
   font-size: 2.65rem;
   letter-spacing: 0.76px;
   line-height: 1;
@@ -687,10 +683,15 @@ body.dark #contact-content::before {
 #contact-content h3 {
   /* font-size: 1.3rem; */
   /* margin: 0.35rem auto 0;*/
+  font-weight: normal;
   font-size: 1.4rem;
   max-width: 75%;
   margin: 0.65rem auto 0.25rem;
-  line-height: 1.5;
+  line-height: 1.3;
+}
+
+#contact-content h3 b {
+  font-weight: 500;
 }
 
 body.dark #contact-content h2 {
@@ -852,7 +853,7 @@ body.dark #contact .bmc-btn {
     );
   }
 
-  #name-in-bg {
+  #watermark {
     display: flex;
     position: fixed;
     left: -6.5%;
@@ -903,12 +904,12 @@ body.dark #contact .bmc-btn {
   }
 
   #navbar h1,
-  #name-in-bg h2 {
+  #watermark {
     font-size: 1.55rem;
     letter-spacing: 3.2px;
   }
 
-  #name-in-bg h2 {
+  #watermark {
     color: var(--blue);
     margin: 0;
   }
@@ -1240,7 +1241,7 @@ body.dark #contact .bmc-btn {
     max-width: 1140px;
   }
 
-  #name-in-bg {
+  #watermark {
     left: 0.5%;
     bottom: 20%;
   }
@@ -1405,7 +1406,7 @@ body.dark #contact .bmc-btn {
     min-height: 150vh;
   }
 
-  #name-in-bg {
+  #watermark {
     display: none;
   }
 }
