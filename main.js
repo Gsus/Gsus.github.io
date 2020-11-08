@@ -12,7 +12,7 @@ const toggleTheme = (e) => {
   if (body.classList.contains("dark")) {
     // If adding dark mode
     // Change toggler's img to a sun
-    changeImgPath(themeToggler.firstElementChild, "Mobile/SVGs/sun.svg");
+    changeImgPath(themeToggler.firstElementChild, "/src/Mobile/SVGs/sun.svg");
 
     // Change icons' colors
     homeIconsStrokes.forEach(
@@ -30,7 +30,7 @@ const toggleTheme = (e) => {
   } else {
     // If removing dark mode
     // Change toggler's img to a moon
-    changeImgPath(themeToggler.firstElementChild, "Mobile/SVGs/moon.svg");
+    changeImgPath(themeToggler.firstElementChild, "/src/Mobile/SVGs/moon.svg");
 
     // Change icons' colors
     homeIconsStrokes.forEach(
@@ -90,28 +90,28 @@ const smallSize = matchMedia("(max-width: 767px)"),
   tabletSize = matchMedia("(min-width: 768px) and (max-width: 1199px)"),
   desktopSize = matchMedia("(min-width: 1200px)"),
   smallSizeImgPaths = [
-    "Mobile/SVGs/Code navbar icon.svg",
-    "Mobile/Portfolio thumbnails/L'indécis.png",
-    "Mobile/Portfolio thumbnails/RGBGuessingGamePreview.png",
-    "Mobile/Portfolio thumbnails/Portfolio.png",
-    "Mobile/Portfolio thumbnails/NewsGrid.png",
-    "Mobile/Portfolio thumbnails/BookList.png",
+    "src/Mobile/SVGs/Code navbar icon.svg",
+    "src/Mobile/Portfolio thumbnails/L'indécis.png",
+    "src/Mobile/Portfolio thumbnails/RGBGuessingGamePreview.png",
+    "src/Mobile/Portfolio thumbnails/Portfolio.png",
+    "src/Mobile/Portfolio thumbnails/NewsGrid.png",
+    "src/Mobile/Portfolio thumbnails/BookList.png",
   ],
   tabletSizeImgPaths = [
-    "Desktop/Illustrations-SVG/Code navbar icon.svg",
-    "Tablet/Portfolio Thumbnails/L'indécis.png",
-    "Tablet/Portfolio Thumbnails/RGBGuessingGame.png",
-    "Tablet/Portfolio Thumbnails/Portfolio.png",
-    "Tablet/Portfolio Thumbnails/NewsGrid.png",
-    "Tablet/Portfolio Thumbnails/BookList.png",
+    "src/Desktop/Illustrations-SVG/Code navbar icon.svg",
+    "src/Tablet/Portfolio Thumbnails/L'indécis.png",
+    "src/Tablet/Portfolio Thumbnails/RGBGuessingGame.png",
+    "src/Tablet/Portfolio Thumbnails/Portfolio.png",
+    "src/Tablet/Portfolio Thumbnails/NewsGrid.png",
+    "src/Tablet/Portfolio Thumbnails/BookList.png",
   ],
   desktopSizeImgPaths = [
-    "Desktop/Illustrations-SVG/Code navbar icon.svg",
-    "Desktop/Portfolio thumbnails/L'indécis.png",
-    "Desktop/Portfolio thumbnails/RGBGuessingGame.png",
-    "Desktop/Portfolio thumbnails/Portfolio.png",
-    "Desktop/Portfolio thumbnails/NewsGrid.png",
-    "Desktop/Portfolio thumbnails/BookList.png",
+    "src/Desktop/Illustrations-SVG/Code navbar icon.svg",
+    "src/Desktop/Portfolio thumbnails/L'indécis.png",
+    "src/Desktop/Portfolio thumbnails/RGBGuessingGame.png",
+    "src/Desktop/Portfolio thumbnails/Portfolio.png",
+    "src/Desktop/Portfolio thumbnails/NewsGrid.png",
+    "src/Desktop/Portfolio thumbnails/BookList.png",
   ],
   cardsImgs = document.querySelectorAll(".card > img"),
   navicon = document.querySelector("#navbar img");

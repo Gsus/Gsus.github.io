@@ -13,24 +13,24 @@
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="/favicon/apple-touch-icon.png"
+      href="/src/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="/src/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png"
+      href="/src/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="manifest" href="/src/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/favicon/safari-pinned-tab.svg"
+      href="/src/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -40,6 +40,7 @@
     <script
       src="https://kit.fontawesome.com/82a2a6781b.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <!--Google Fonts-->
     <link
@@ -48,6 +49,8 @@
     />
     <!--CSS-->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
   </head>
 
   <body>
@@ -56,7 +59,7 @@
       <div id="navbar-container" class="container">
         <div class="heading">
           <h1>Jesús Sánchez B.</h1>
-          <img src="./Mobile/SVGs/Code navbar icon.svg" alt="icon" />
+          <img src="./src/Mobile/SVGs/Code navbar icon.svg" alt="icon" />
         </div>
         <ul>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -64,7 +67,9 @@
           <li><a href="#contact">Contact</a></li>
           <li>
             <a href="#" id="theme-toggler"
-              ><img src="/Mobile/SVGs/moon.svg" alt="Dark/Light theme toggler"
+              ><img
+                src="./src/Mobile/SVGs/moon.svg"
+                alt="Dark/Light theme toggler"
             /></a>
           </li>
         </ul>
@@ -226,7 +231,7 @@
             </div>
 
             <img
-              src="./Mobile/JSPhoto.jpg"
+              src="./src/Mobile/JSPhoto.jpg"
               alt="Jesús Sánchez B. photo"
               id="main-photo"
               class="fade-in"
@@ -240,8 +245,8 @@
         <div class="container">
           <div id="portfolio-CTA">
             <h3>Take a look!</h3>
-            <img
-              src="./Mobile/Illustrations/Pointing illustration.svg"
+            <img 
+              src="./src/Mobile/Illustrations/Pointing illustration.svg"
               alt="Illustration. A man smiling wearing a sort-of hoodie, pointing to the right"
             />
           </div>
@@ -249,7 +254,8 @@
             <!-- L'indécis Tribute -->
             <div class="card fade-in">
               <img
-                src="./Mobile/Portfolio thumbnails/L'indécis.png"
+                loading="lazy"
+                src="./src/Mobile/Portfolio thumbnails/L'indécis.png"
                 alt="L'indécis Project thumbnail"
               />
               <div class="info">
@@ -280,8 +286,9 @@
             </div>
             <!-- RGB Guessing Game -->
             <div class="card fade-in">
-              <img
-                src="./Mobile/Portfolio thumbnails/RGBGuessingGamePreview.png"
+              <img 
+                loading="lazy" 
+                src="./src/Mobile/Portfolio thumbnails/RGBGuessingGamePreview.png"
                 alt="RGB Guessing Game Project thumbnail"
               />
               <div class="info">
@@ -315,8 +322,9 @@
 
             <!-- Portfolio site -->
             <div class="card fade-in">
-              <img
-                src="./Mobile/Portfolio thumbnails/Portfolio.png"
+              <img 
+                loading="lazy" 
+                src="./src/Mobile/Portfolio thumbnails/Portfolio.png"
                 alt="Portfolio Project thumbnail"
               />
               <div class="info">
@@ -339,8 +347,9 @@
             </div>
             <!-- NewsGrid -->
             <div class="card fade-in">
-              <img
-                src="./Mobile/Portfolio thumbnails/NewsGrid.png"
+              <img  
+                loading="lazy"
+                src="./src/Mobile/Portfolio thumbnails/NewsGrid.png"
                 alt="NewsGrid Project thumbnail"
               />
               <div class="info">
@@ -369,8 +378,9 @@
             </div>
             <!-- Booklist -->
             <div class="card fade-in">
-              <img
-                src="./Mobile/Portfolio thumbnails/BookList.png"
+              <img 
+                loading="lazy"
+                src="./src/Mobile/Portfolio thumbnails/BookList.png"
                 alt="Booklist Project thumbnail"
               />
               <div class="info">
@@ -427,30 +437,33 @@
               </p>
               <ul class="tech">
                 <li>
-                  <img src="/Mobile/SVGs/html5.svg" alt="HTML5 logo" />
+                  <img src="/src/Mobile/SVGs/html5.svg" alt="HTML5 logo" />
                   <p>HTML5</p>
                 </li>
                 <li>
-                  <img src="/Mobile/SVGs/css.svg" alt="CSS3 logo" />
+                  <img src="/src/Mobile/SVGs/css.svg" alt="CSS3 logo" />
                   <p>CSS3</p>
                 </li>
                 <li>
                   <img
-                    src="/Mobile/SVGs/javascript.svg"
+                    src="/src/Mobile/SVGs/javascript.svg"
                     alt="JavaScript logo"
                   />
                   <p>JavaScript</p>
                 </li>
                 <li>
-                  <img src="/Mobile/SVGs/adobe-xd.svg" alt="Adobe XD logo" />
+                  <img
+                    src="/src/Mobile/SVGs/adobe-xd.svg"
+                    alt="Adobe XD logo"
+                  />
                   <p>Adobe XD</p>
                 </li>
                 <li>
-                  <img src="/Mobile/SVGs/git.svg" alt="Git logo" />
+                  <img src="/src/Mobile/SVGs/git.svg" alt="Git logo" />
                   <p>Git</p>
                 </li>
                 <li>
-                  <img src="/Mobile/SVGs/vs-code.svg" alt="VSCode logo" />
+                  <img src="/src/Mobile/SVGs/vs-code.svg" alt="VSCode logo" />
                   <p>VSCode</p>
                 </li>
               </ul>
@@ -459,7 +472,7 @@
               ></a>
             </div>
             <img
-              src="./Mobile/Illustrations/Illustration w- laptop.svg"
+              src="./src/Mobile/Illustrations/Illustration w- laptop.svg"
               alt="Illustration. A man wearing a blue shirt, smiling with a laptop in his hands"
               id="about-illustration"
             />
@@ -589,7 +602,7 @@
             ></script>
 
             <img
-              src="./Mobile/Illustrations/Illustration w- coffee.svg"
+              src="./src/Mobile/Illustrations/Illustration w- coffee.svg"
               alt="Illustration. A man smiling wearing a blue shirt and a coffee cup in his hand"
               id="contact-illustration"
             />
@@ -657,7 +670,5 @@
         </a>
       </section>
     </main>
-
-    <script src="./main.js"></script>
   </body>
 </html>
