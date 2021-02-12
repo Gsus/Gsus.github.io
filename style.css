@@ -787,9 +787,12 @@ body.dark #contact .bmc-btn {
     margin-right: 0;
   }
 
-  #about hr,
-  #about .btn {
+  #about hr {
     width: 33%;
+  }
+
+  #about .btn {
+    width: 25%;
   }
 
   #contact-content h2 {
@@ -1165,6 +1168,11 @@ body.dark #contact .bmc-btn {
     margin: initial;
     font-size: 1.55rem;
   }
+
+  /* Pending */
+  /* #contact-content .switch-color {
+    color: var(--light-gray);
+  } */
 
   #contact-content .social a svg {
     transform: scale(1.15);
