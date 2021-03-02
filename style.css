@@ -256,7 +256,7 @@ body.dark #home #home-content .btn-blue:focus {
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8rem;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.7px;
   font-weight: 500;
   transition: background 0.4s;
 }
@@ -841,6 +841,10 @@ body.dark #contact .bmc-btn {
 
   .container {
     max-width: 720px;
+  }
+
+  .btn {
+    letter-spacing: 1.1px;
   }
 
   .btns {
